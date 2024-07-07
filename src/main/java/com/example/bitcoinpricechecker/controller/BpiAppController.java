@@ -1,6 +1,6 @@
-package com.example.demo.controller;
+package com.example.bitcoinpricechecker.controller;
 
-import com.example.demo.service.BpiAppService;
+import com.example.bitcoinpricechecker.service.BpiAppService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,6 +8,7 @@ import java.util.SortedMap;
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api")
 public class BpiAppController {
 

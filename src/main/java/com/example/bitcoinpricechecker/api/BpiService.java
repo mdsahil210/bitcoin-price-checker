@@ -1,6 +1,6 @@
-package com.example.demo.api;
+package com.example.bitcoinpricechecker.api;
 
-import com.example.demo.model.BpiHistoricalData;
+import com.example.bitcoinpricechecker.model.BpiHistoricalData;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

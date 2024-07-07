@@ -1,4 +1,4 @@
-package com.example.demo.api;
+package com.example.bitcoinpricechecker.api;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

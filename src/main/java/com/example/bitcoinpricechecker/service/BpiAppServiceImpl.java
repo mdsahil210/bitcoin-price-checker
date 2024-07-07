@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package com.example.bitcoinpricechecker.service;
 
-import com.example.demo.api.BpiService;
-import com.example.demo.api.CoinDeskApiClient;
-import com.example.demo.model.BpiHistoricalData;
+import com.example.bitcoinpricechecker.api.BpiService;
+import com.example.bitcoinpricechecker.api.CoinDeskApiClient;
+import com.example.bitcoinpricechecker.model.BpiHistoricalData;
 import org.springframework.stereotype.Service;
 
 import java.util.SortedMap;

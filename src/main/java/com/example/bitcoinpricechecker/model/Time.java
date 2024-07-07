@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.bitcoinpricechecker.model;
 
 public class Time {
     private String updated;

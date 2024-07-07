@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.bitcoinpricechecker.service;
 
 import java.util.SortedMap;
 
