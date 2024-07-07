@@ -70,6 +70,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>bitcoin-price-checker</finalName>
 	</build>
-
 </project>
