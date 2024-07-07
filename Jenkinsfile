@@ -9,14 +9,20 @@ pipeline {
         stage('Build Maven') {
             steps {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mdsahil210/bitcoin-price-checker/']])
-                sh 'cd backend; mvn clean install'
+                dir('backend') {
+                    sh 'mvn clean install'
+                }
             }
         }
         stage("Build Docker Image") {
             steps {
                 script {
-                    sh 'cd backend; docker build -t mdsahil210/bitcoin-price-checker-backend .'
-                    sh 'cd frontend; docker build -t mdsahil210/bitcoin-price-checker-frontend . '
+                    dir('backend') {
+                        sh 'docker build -t mdsahil210/bitcoin-price-checker-backend .'
+                    }
+                    dir('frontend') {
+                        sh 'docker build -t mdsahil210/bitcoin-price-checker-frontend .'
+                    }
                 }
             }
         }
